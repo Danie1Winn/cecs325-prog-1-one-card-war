@@ -2,9 +2,6 @@
 #define card_h
 
 class Card {
-"""
-
-"""
 public:
     Card(char r, char s);
     Card();

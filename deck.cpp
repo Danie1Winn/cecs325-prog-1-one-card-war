@@ -21,12 +21,12 @@ Deck::Deck() {
 Card Deck::deal() {
     Card dealtCard = myDeck[topCard];
     topCard++;
-    return dealtCard
+    return dealtCard;
 }
 
 void Deck::display() {
     for (int i=0; i<52; i++) {
-        theDeck[i].display();
+        myDeck[i].display();
         cout << ",";
 
         if ((i+1)%13==0) {
@@ -35,7 +35,7 @@ void Deck::display() {
     }
 }
 
-viud Deck::shuffle() {
+void Deck::shuffle() {
     topCard = 0;
 
     for (int i=51; i>0; i--) {

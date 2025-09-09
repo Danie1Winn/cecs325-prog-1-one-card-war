@@ -24,7 +24,7 @@ void Card::display() {
 
 int Card::whoWins(Card otherCard) {
     int myValue = this -> getValue();
-    int otherValue = otherCard.getValue()
+    int otherValue = otherCard.getValue();
 
     if (myValue > otherValue) {
         return 1; // myValue wins
