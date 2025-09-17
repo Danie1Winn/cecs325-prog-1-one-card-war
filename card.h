@@ -1,3 +1,10 @@
+// Name: Daniel Winn
+// Class (CECS 325-02)
+// Project Name (Prog 1 - WAR)
+// Due Date (09/18/2025)
+//
+// I certify that this program is my own original work. I did not copy any part of this program from
+// any other source. I further certify that I typed each and every line of code in this program.
 #ifndef card_h
 #define card_h
 
@@ -33,7 +40,7 @@ public:
      * @return -1 if the other card wins
      * @return 0 if it's a tie
      */
-    int whoWins(Card otherCard);
+    int compare(Card otherCard);
 
 private:
     char rank; ///< The card's rank ('A', '2'-'9', 'T', 'J', 'Q', 'K')

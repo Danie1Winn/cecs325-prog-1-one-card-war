@@ -1,3 +1,10 @@
+// Name: Daniel Winn
+// Class (CECS 325-02)
+// Project Name (Prog 1 - WAR)
+// Due Date (09/18/2025)
+//
+// I certify that this program is my own original work. I did not copy any part of this program from
+// any other source. I further certify that I typed each and every line of code in this program.
 #include <iostream>
 #include <string>
 #include <ctime>
@@ -45,7 +52,7 @@ int main () {
         p2Card.display();
         cout << endl;
 
-        int result = p1Card.whoWins(p2Card);
+        int result = p1Card.compare(p2Card);
 
         if (result==1) {
             cout << playerOne << " - Winner" << endl;

@@ -1,3 +1,10 @@
+// Name: Daniel Winn
+// Class (CECS 325-02)
+// Project Name (Prog 1 - WAR)
+// Due Date (09/18/2025)
+//
+// I certify that this program is my own original work. I did not copy any part of this program from
+// any other source. I further certify that I typed each and every line of code in this program.
 #include "deck.h"
 #include <iostream>
 #include <cstdlib>
