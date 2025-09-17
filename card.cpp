@@ -39,8 +39,6 @@ int Card::whoWins(Card otherCard) {
 
 int Card::getValue() {
     switch (rank) {
-        case 'A':
-        return 14;
         case 'K':
         return 13;
         case 'Q':
@@ -65,6 +63,8 @@ int Card::getValue() {
         return 3;
         case '2':
         return 2;
+        case 'A':
+        return 1;
         default:
         return 0;
     }

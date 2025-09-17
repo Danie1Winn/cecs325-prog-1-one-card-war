@@ -15,7 +15,7 @@ int main () {
 
     cout << "Enter the name of the first player: ";
     cin >> playerOne;
-    cout << "Enter the name of the second player ";
+    cout << "Enter the name of the second player: ";
     cin >> playerTwo;
     cout << endl;
 
@@ -32,27 +32,27 @@ int main () {
 
     for (int i=0; i<26; i++) {
         cout << "Game " << (i+1) << endl;
-        cout << "__________" << endl;
+        cout << "____________________\n" << endl;
 
         Card p1Card = gameDeck.deal();
         Card p2Card = gameDeck.deal();
 
-        cout << "\t" << playerOne << "=>";
+        cout << "\t" << playerOne << " - ";
         p1Card.display();
         cout << endl;
 
-        cout << "\t" << playerTwo << "=>";
+        cout << "\t" << playerTwo << " - ";
         p2Card.display();
         cout << endl;
 
         int result = p1Card.whoWins(p2Card);
 
         if (result==1) {
-            cout << playerOne << "=> Winner" << endl;
+            cout << playerOne << " - Winner" << endl;
             playerOneWins++;
         }
         else if (result==-1) {
-            cout << playerTwo << "=> Winner" << endl;
+            cout << playerTwo << " - Winner" << endl;
             playerTwoWins++;
         }
         else {
@@ -64,8 +64,8 @@ int main () {
 
 
     cout << "Final Scores" << endl;
-    cout << "____________" << endl;
-    cout << "\t" << playerOne << " vs. " << playerTwo << endl;
+    cout << "______________________________\n" << endl;
+    cout << "\t" << playerOne << "\t vs. \t" << playerTwo << endl;
     cout << "Wins\t" << playerOneWins <<  "\t\t" << playerTwoWins << endl;
     cout << "Losses\t" << playerTwoWins << "\t\t" << playerOneWins << endl;
     cout << "Ties\t" << ties << "\t\t" << ties << endl;
