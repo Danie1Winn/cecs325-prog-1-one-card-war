@@ -3,7 +3,7 @@ var indexSectionsWithContent =
   0: "cdmsw",
   1: "cd",
   2: "cdw",
-  3: "cdmsw"
+  3: "cdms"
 };
 
 var indexSectionNames =

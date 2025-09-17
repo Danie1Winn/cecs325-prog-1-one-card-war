@@ -41,7 +41,7 @@ public:
 
     /**
      * @brief Randomly shuffles the deck.
-     * Uses cstdlib's shuffle function to randomize the card order.
+     * Uses the random number generator rand() from cstdlib to randomize / shuffle the deck.
      */
     void shuffle();
 
